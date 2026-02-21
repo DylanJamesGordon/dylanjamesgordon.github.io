@@ -6,7 +6,6 @@ body {
     padding: 2rem;
 }
 
-
 img {
     max-width: 200px;        /* keeps photo from being too big */
     display: block;           /* lets margin auto center it */
