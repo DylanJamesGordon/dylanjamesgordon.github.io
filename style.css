@@ -6,8 +6,9 @@ body {
     padding: 2rem;
 }
 
-img {
-    max-width: 200px;        /* keeps photo from being too big */
-    display: block;           /* lets margin auto center it */
-    margin: 1rem auto 2rem;   /* 1rem top, auto sides (center), 2rem bottom */
+.headshot {
+    max-width: 300px;       /* adjust width as you like */
+    height: auto;            /* keeps original aspect ratio */
+    display: block;          /* allows centering */
+    margin: 1rem auto 2rem;  /* 1rem top, auto sides (center), 2rem bottom */
 }
