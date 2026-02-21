@@ -7,7 +7,7 @@ body {
 }
 
 .headshot {
-    max-width: 300px;       /* adjust width as you like */
+    max-width: 100px;       /* adjust width as you like */
     height: auto;            /* keeps original aspect ratio */
     display: block;          /* allows centering */
     margin: 1rem auto 2rem;  /* 1rem top, auto sides (center), 2rem bottom */
