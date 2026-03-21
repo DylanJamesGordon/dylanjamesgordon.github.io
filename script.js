@@ -2,6 +2,19 @@
 
 
 
+// Mouse Interaction
+let mouse = {
+    x: null,
+    y: null
+};
+
+window.addEventListener("mousemove", e => {
+    mouse.x = e.x;
+    mouse.y = e.y;
+});
+
+
+
 // Pixel Waterfall
 const canvas = document.getElementById("pixelCanvas");
 const ctx = canvas.getContext("2d");
@@ -53,16 +66,3 @@ function animate() {
 }
 
 animate();
-
-
-
-// Mouse Interaction
-let mouse = {
-    x: null,
-    y: null
-};
-
-window.addEventListener("mousemove", e => {
-    mouse.x = e.x;
-    mouse.y = e.y;
-});
