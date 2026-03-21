@@ -1,11 +1,9 @@
 <!-- Portfolio hosted using Github Pages, landing name for website is 'index.html' - The structure -->
 <!DOCTYPE html>
 
-<!-- Everything must be within <html> -->
+<!-- Root HTML element: everything on the page must be inside this tag -->
 <!-- Browser language = English -->
 <html lang="en">
-
-
 
 <!-- Information about webpage, metadata -->
 <head>
@@ -27,8 +25,6 @@
     
 </head>
 
-
-
 <!-- All the visible information of the webpage -->
 <body>
 
@@ -36,7 +32,7 @@
     <canvas id="pixelCanvas"></canvas>
     
     <!-- Nav Bar, Bootstrapped --> 
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top" aria-label="Main Navigation">
         <div class="container">
 
             <a class="navbar-brand" href="#">Dylan</a>
@@ -52,9 +48,10 @@
                     <a class="nav-link" href="#Contact">Contact</a>
                 </div>
             </div>
-
         </div>
     </nav>
+    
+
     
     <!-- Intro Section -->    
     <div class="container py-5"> <!-- Bootstrap responsiveness: containers, rows, columns -->
@@ -66,6 +63,7 @@
 
                         <!-- <p> to write a brief intro -->
                         <p class="mb-3">Hi. Welcome to my website made with HTML, CSS, and Javascript. My name is Dylan and I am incredibly passionate about video games!</p>
+                    </div>
                 </div>
             </div>    
         </div>
@@ -108,7 +106,7 @@
 
                 <div class="col-12 col-md-6">
                     <!-- Professional photo -->
-                    <img src="images/headshot.jpg" alt="Dylan James Gordon Headshot" class="img-fluid">
+                    <img src="images/headshot.jpg" alt="Dylan James Gordon Headshot" class="img-fluid" loading="lazy">
                 </div>
             </div>    
         </div>    
@@ -142,7 +140,7 @@
                     
                 <div class="col-12 col-md-6 text-center py-5">
                     <!-- Artifact 1 -->
-                    <img src="images/githubwebsite.jpg" alt="Github Website" class="img-fluid">
+                    <img src="images/githubwebsite.jpg" alt="Github Website" class="img-fluid" loading="lazy">
                 </div>
             </div>        
                     
@@ -166,7 +164,7 @@
 
                 <div class="col-12 col-md-6 text-center py-5">
                     <!-- Artifact 2 -->
-                    <img src="images/unrealproject.jpg" alt="Unreal Project" class="img-fluid">
+                    <img src="images/unrealproject.jpg" alt="Unreal Project" class="img-fluid" loading="lazy">
                 </div>    
             </div>
 
@@ -186,12 +184,11 @@
 
                 <div class="col-12 col-md-6 text-center py-5">
                     <!-- Artifact 3 -->
-                    <img src="images/unityproject.jpg" alt="Unity Project" class="img-fluid">
+                    <img src="images/unityproject.jpg" alt="Unity Project" class="img-fluid" loading="lazy">
                 </div>
             </div>
         </div>    
     </div>
-
 
 
     <!-- Contact Section -->
@@ -202,11 +199,11 @@
                     <h2 class="mb-4 glow" id="Contact">Contact</h2>
                     <!-- Contact -->
                     <div class="d-flex justify-content-center gap-4">
-                    <a href="https://www.linkedin.com/in/dylanjamesgordon/" target="_blank">LinkedIn</a>
-                    <a href="https://www.dylanjamesgordon.com/" target="_blank">Portfolio</a>
-                    <!-- mailto only works if client has native mail plugin on desktop or mobile -->
-                    <!-- Contact form would work, but for the purposes of this assignment will leave as is - revisit later -->
-                    <a href="mailto:dylanjamesgordon15@gmail.com">Email</a>
+                        <a href="https://www.linkedin.com/in/dylanjamesgordon/" target="_blank">LinkedIn</a>
+                        <a href="https://www.dylanjamesgordon.com/" target="_blank">Portfolio</a>
+                        <!-- mailto only works if client has native mail plugin on desktop or mobile -->
+                        <!-- Contact form would work, but for the purposes of this assignment will leave as is - revisit later -->
+                        <a href="mailto:dylanjamesgordon15@gmail.com">Email</a>
                     </div>
                 </div>    
             </div>
@@ -221,7 +218,5 @@
     <script src="script.js"></script> 
 
 </body>
-
-
 
 </html>
