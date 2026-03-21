@@ -107,3 +107,15 @@ img {
     z-index: -1;
     pointer-events: none;
 }
+
+/* Contact Links - Trying to fix Bootstrap CSS for <a> elements so it fits the theme */
+#Contact a {
+    color: #4cc9f0;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.2s ease;
+}
+
+#Contact a:hover {
+    color: #8be9fd;
+}
