@@ -57,12 +57,18 @@ body::before {
 
 /* Navbar - Matching Cards theme */
 .navbar {
-    background: transparent;
-    color: #d6e2ff;
+    background-color: #05070a;
     border: 1px solid rgba(76, 201, 240, 0.15);
     border-radius: 12px;
     padding: 20px;
     backdrop-filter: blur(8px);
+}
+
+/* Navbar Links - Matching Website Theme */
+.navbar .navl-link {
+    color: #d6e2ff;
+    margin: 0 8px;
+    border-radius: 8px;
 }
 
 /* Scroll Behavior */
