@@ -70,3 +70,9 @@ html {
 p {
     line-height: 1.6;
 }
+
+/* ===== IMAGE BORDER GLOW ===== */
+img {
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(76, 201, 240, 0.1);
+}
