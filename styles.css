@@ -55,6 +55,16 @@ body::before {
     transform: translateY(-2px);
 }
 
+/* Navbar - Matching Cards theme */
+.navbar {
+    background: transparent;
+    color: #d6e2ff;
+    border: 1px solid rgba(76, 201, 240, 0.15);
+    border-radius: 12px;
+    padding: 20px;
+    backdrop-filter: blur(8px);
+}
+
 /* Scroll Behavior */
 html {
     scroll-behavior: smooth;
