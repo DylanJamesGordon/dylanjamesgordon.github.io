@@ -18,16 +18,21 @@ window.addEventListener("mousemove", e => {
 
 
 // Pixel Waterfall
+// Pulls from HTML Canvas
 const canvas = document.getElementById("pixelCanvas");
 const ctx = canvas.getContext("2d");
 
+// Set Canvas size - fill entire browser window
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
+// Particle storage
 const pixels = [];
 
+// How many pixels exist
 const pixelCount = 120;
 
+// Create pixels, random positioning, speed
 for (let i = 0; i < pixelCount; i++) {
     pixels.push({
         x: Math.random() * canvas.width,
@@ -37,34 +42,44 @@ for (let i = 0; i < pixelCount; i++) {
     });
 }
 
+// Animation function
 function animate() {
 
+    // Clear screen
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
+    // Loop
     pixels.forEach(p => {
 
+    // Calculate distance to mouse - interactive element - Pythagorean theorem - This I would've had no idea was necessary    
     const dx = p.x - mouse.x;
         const dy = p.y - mouse.y;
         const distance = Math.sqrt(dx * dx + dy * dy);
 
+        // If mouse is nearby, push pixels away
         if (distance < 80) {
             p.x += dx * 0.05;
             p.y += dy * 0.05;
         }
 
+        // Gravity, falling motion physics formula
         p.y += p.speed;
 
+        // Reset pixels at bottom, restart at top
         if (p.y > canvas.height) {
             p.y = 0;
             p.x = Math.random() * canvas.width;
         }
 
+        // Set pixel color, draw pixel
         ctx.fillStyle = "#4cc9f0";
         ctx.fillRect(p.x, p.y, p.size, p.size);
 
     });
 
+    // Animation loop
     requestAnimationFrame(animate);
 }
 
+// Last, but not least, start the animation we just made
 animate();
