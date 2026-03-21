@@ -1,19 +1,19 @@
 /* All CSS is in a Stylesheet - The appearance */
 /* CSS was fairly straightforward like HTML, just a lot of plug and play */
 
-/* Glow */
+/* Glow - Used in Glow Text and Card Hover effects */
 :root {
     --glow: #4cc9f0;
 }
 
-/* Base Page Styling */
+/* Base Page Styling - Universal background and font coloring, styling */
 body {
     background-color: #05070a;
     color: #d6e2ff;
     font-family: Arial, sans-serif;
 }
 
-/* Background */
+/* Background - Beneath the pixel waterfall canvas */
 body::before {
     content: "";
     position: fixed;
@@ -30,7 +30,7 @@ body::before {
     z-index: -2;
 }
 
-/* Glow Text */
+/* Glow Text - Manually apply to some text elements, usually header, to make pop */
 .glow {
     color: var(--glow);
     text-shadow:
@@ -38,7 +38,7 @@ body::before {
         0 0 12px rgba(76, 201, 240, 0.4);
 }
 
-/* Cards */
+/* Cards - Add some visual flair and hierarchy to the website separating sections, unsure if this interferes with Bootstrap columns, either way I liked the look */
 .card {
     background: transparent;
     color: #d6e2ff;
@@ -48,7 +48,7 @@ body::before {
     backdrop-filter: blur(8px);
 }
 
-/* Card Hover Effect */
+/* Card Hover Effect - Cards glow when hovered */
 .card:hover {
     border-color: var(--glow);
     box-shadow: 0 0 15px rgba(76, 201, 240, 0.15);
@@ -64,31 +64,31 @@ body::before {
     backdrop-filter: blur(8px);
 }
 
-/* Navbar Links - Matching Website Theme */
+/* Navbar Links - Matching website theme */
 .navbar .navl-link {
     color: #d6e2ff;
     margin: 0 8px;
     border-radius: 8px;
 }
 
-/* Scroll Behavior */
+/* Scroll Behavior - Makes smoother */
 html {
     scroll-behavior: smooth;
 }
 
-/* Navbar Offset Fix */
+/* Navbar Offset Fix - When using navbar it would block the title of the section, so had to offset to account for that */
 #Bio,
 #Artifacts,
 #Contact {
     scroll-margin-top: 80px;
 }
 
-/* Text Readability */
+/* Text Readability - Text was a little jumnbled, making it easier on the eyes */
 p {
     line-height: 1.6;
 }
 
-/* Image Styling */
+/* Image Styling - Subtle image styling, match theme */
 img {
     display: block;
     max-width: 100%;
@@ -96,7 +96,7 @@ img {
     box-shadow: 0 0 20px rgba(76, 201, 240, 0.1);
 }
 
-/* Pixel Background */
+/* Pixel Background - Interactive pixel waterfall canvas one layer above the base background */
 #pixelCanvas {
     position: fixed;
     top: 0;
