@@ -1,4 +1,4 @@
-/* All CSS is in a stylesheet - The appearance */
+/* ===== ALL CSS IS IN A STYLESHEET - THE APPEARANCE ===== */
 body {
     background-color: black;
     color: white;
@@ -9,8 +9,19 @@ h1 {
     color: cyan;
 }
 
+/* ===== SCROLL BEHAVIOR ===== */
+html {
+    scroll-behavior: smooth;
+}
 
-/* Fix navbar scroll covering section h2 */
-h2 {
+/* ===== NAVBAR OFFSET FIX ===== */
+#Bio,
+#Artifacts,
+#Contact {
     scroll-margin-top: 80px;
+}
+
+/* ===== TEXT READABILITY ===== */
+p {
+    line-height: 1.6;
 }
