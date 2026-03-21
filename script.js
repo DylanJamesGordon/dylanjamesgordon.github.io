@@ -1,0 +1,1 @@
+// All Javascript is in a script - The behavior
