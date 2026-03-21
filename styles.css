@@ -40,7 +40,7 @@ body::before {
 
 /* Cards */
 .card {
-    background: rgba(255, 255, 255, 0.02);
+    background: transparent;
     color: #d6e2ff;
     border: 1px solid rgba(76, 201, 240, 0.15);
     border-radius: 12px;
