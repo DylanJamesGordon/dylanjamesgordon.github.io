@@ -1,18 +1,19 @@
-/* ===== ALL CSS IS IN A STYLESHEET - THE APPEARANCE ===== */
+/* All CSS is in a Stylesheet - The appearance */
+/* CSS was fairly straightforward like HTML, just a lot of plug and play */
 
-/* ===== AMBIENT GLOW ===== */
+/* Glow */
 :root {
     --glow: #4cc9f0;
 }
 
-/* ===== BASE PAGE STYLE ===== */
+/* Base Page Styling */
 body {
     background-color: #05070a;
     color: #d6e2ff;
     font-family: Arial, sans-serif;
 }
 
-/* ===== BACKGROUND ===== */
+/* Background */
 body::before {
     content: "";
     position: fixed;
@@ -29,7 +30,7 @@ body::before {
     z-index: -2;
 }
 
-/* ===== SOFT GLOW TEXT ===== */
+/* Glow Text */
 .glow {
     color: var(--glow);
     text-shadow:
@@ -37,7 +38,7 @@ body::before {
         0 0 12px rgba(76, 201, 240, 0.4);
 }
 
-/* ===== CARDS ===== */
+/* Cards */
 .card {
     background: rgba(255, 255, 255, 0.02);
     color: #d6e2ff;
@@ -49,31 +50,31 @@ body::before {
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
-/* ===== CARD HOVER EFFECT ===== */
+/* Card Hover Effect */
 .card:hover {
     border-color: var(--glow);
     box-shadow: 0 0 15px rgba(76, 201, 240, 0.15);
     transform: translateY(-2px);
 }
 
-/* ===== SCROLL BEHAVIOR ===== */
+/* Scroll Behavior */
 html {
     scroll-behavior: smooth;
 }
 
-/* ===== NAVBAR OFFSET FIX ===== */
+/* Navbar Offset Fix */
 #Bio,
 #Artifacts,
 #Contact {
     scroll-margin-top: 80px;
 }
 
-/* ===== TEXT READABILITY ===== */
+/* Text Readability */
 p {
     line-height: 1.6;
 }
 
-/* ===== IMAGE STYLING ===== */
+/* Image Styling */
 img {
     display: block;
     max-width: 100%;
@@ -81,7 +82,7 @@ img {
     box-shadow: 0 0 20px rgba(76, 201, 240, 0.1);
 }
 
-/* ===== PIXEL WELL BACKGROUND LAYER ===== */
+/* Pixel Background */
 #pixelCanvas {
     position: fixed;
     top: 0;

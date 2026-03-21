@@ -1,6 +1,6 @@
 // All Javascript is in a script - The behavior
-
-
+// The CSS and HTML was fairly self explanatory, however Javascript was where I began to get lost
+//I had a concept I had no idea how to implement, so I used AI to help guide me in the direction and then explain how the math and logic works.
 
 // Mouse Interaction
 let mouse = {
