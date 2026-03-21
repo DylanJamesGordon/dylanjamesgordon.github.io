@@ -1,8 +1,39 @@
 /* ===== ALL CSS IS IN A STYLESHEET - THE APPEARANCE ===== */
 body {
-    background-color: black;
-    color: white;
+    background-color: #05070a;
+    color: #d6e2ff;
     font-family: Arial, sans-serif;
+}
+
+/* ===== AMBIENT GLOW ===== */
+:root {
+    --glow-primary: #4cc9f0;
+    --glow-secondary: #7b2cbf;
+}
+
+/* ===== SOFT GLOW ===== */
+.glow {
+    color: var(--glow-primary);
+    text-shadow:
+        0 0 4px rgba(76, 201, 240, 0.6),
+        0 0 12px rgba(76, 201, 240, 0.4);
+}
+
+/* ===== GLASS CARDS ===== */
+.card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(76, 201, 240, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    backdrop-filter: blur(6px);
+    transition: 0.3s ease;
+}
+
+/* ===== GENTLE HOVER ===== */
+.card:hover {
+    border-color: var(--glow-primary);
+    box-shadow: 0 0 15px rgba(76, 201, 240, 0.15);
+    transform: translateY(-2px);
 }
 
 h1 {
