@@ -8,3 +8,9 @@ body {
 h1 {
     color: cyan;
 }
+
+
+/* Fix navbar scroll covering section h2 */
+h2 {
+    scroll-margin-top: 80px;
+}
